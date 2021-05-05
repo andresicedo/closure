@@ -1,0 +1,30 @@
+A closure is the ability to access variables that are out of scope of the 
+current function. Child functions having access to all parent function 
+variables and scope.
+
+Ex:
+
+Closure summary - When you have a function defined inside of another function, 
+the inner function has access to the variables and scope of the outer function. 
+Even if the outer function finishes executing and those variables are no longer 
+accessible outside that function.
+
+A closure is a function that remembers its outer variables and can access them. 
+In some languages, that's not possible, but in Javascript, all functions are 
+naturally closures with only one exception(the new function syntax). That is, 
+they automatically remember where they were created using a hidden [[Environment]] 
+property and then their code can access outer variables.
+
+In an interview, when you're asked what a closure is, a valid answer would be:
+
+A closure is a function that remembers its outer variables and can access them. 
+In some languages, that's not possible, but in Javascript, all functions are 
+naturally closures. That  is, they automatically remember where they were created 
+using a hidden [[Environment]] property and then their code can access outer 
+variables. When you have a function defined inside of another function, the inner 
+function has access to the variables and scope of the outer function. Even if the 
+outer function finishes executing and those variables are no longer accessible 
+outside that function.
+
+
+https://javascript.info/closure
